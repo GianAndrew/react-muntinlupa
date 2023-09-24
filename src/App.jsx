@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 const App = () => {
 	const [show, setShow] = useState(false);
 	return (
-		<div className='min-h-[100dvh] bg-black/60 relative'>
+		<div id='home' className='min-h-[100dvh] bg-black/60 relative'>
 			<div className='bg-image'></div>
 			<Navbar show={show} setShow={setShow} />
 
@@ -20,12 +20,13 @@ const App = () => {
 						<p className='max-w-sm md:max-w-md lg:max-w-xl text-sm md:text-md lg:text-lg mt-3 leading-5 text-gray-100'>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et odio nostrum aspernatur debitis ab, fugiat cupiditate veritatis minus beatae nam? Id officiis aperiam optio soluta!
 						</p>
-						<button
+						<a
+							href='#about'
 							type='button'
 							className='focus:outline-none text-white bg-orange-500 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 font-medium rounded-md text-sm px-5 py-2.5 mr-2 mb-2 mt-8'
 						>
 							Get Started
-						</button>
+						</a>
 					</div>
 					<div className='w-full h-full lg:w-1/2 flex flex-col justify-center items-center lg:items-end space-y-4'>
 						<div className='flex flex-col py-4 px-2 items-center lg:items-end justify-center'>
@@ -48,8 +49,6 @@ const App = () => {
 						</div>
 					</div>
 				</div>
-				<div className='about'></div>
-				<div className='contact'></div>
 			</div>
 			<MapComponent />
 			<Contact />

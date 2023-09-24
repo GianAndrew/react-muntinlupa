@@ -4,9 +4,9 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 const MapComponent = () => {
 	return (
 		<>
-			<div className='overflow-hidden w-full bg-gray-950'>
+			<div id='about' className='overflow-hidden w-full bg-gray-950'>
 				<div className='max-w-screen-2xl mx-auto flex space-x-0 lg:space-x-4 justify-center flex-col items-center lg:flex-row p-4'>
-					<MapContainer preferCanvas center={[14.402197, 121.027776]} zoom={13} maxZoom={18} scrollWheelZoom={false}>
+					<MapContainer preferCanvas center={[14.389786, 121.047566]} zoom={13} maxZoom={18} scrollWheelZoom={false}>
 						<TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
 					</MapContainer>
 
